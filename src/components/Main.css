@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto:ital,wght@0,300;1,100;1,300&family=Sacramento&family=Vazirmatn&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+.header {
+  width: 85%;
+  height: 100vh;
+  background-color: #f2f2f2;
+  display: inline-flex;
+  flex-direction: column;
+  vertical-align: top;
+  position: relative;
+  overflow: scroll;
+}
+
+.header-up {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  width: 100%;
+  background-image: url(../images/art.jpg);
+  background-position: 30% 80%;
+  box-sizing: border-box;
+}
+
+.header-up-child {
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.4;
+}
+.header-first-text {
+  font-family: "Architects Daughter";
+}
+.header-second-text {
+  font-family: "Architects Daughter";
+}
+.header-third-text {
+  font-family: "Sacramento";
+  font-size: 24px;
+}
+
+.header-first-text,
+.header-second-text,
+.header-third-text {
+  color: white;
+  z-index: 5;
+}
+
+.header-down {
+  padding: 50px 125px;
+}
+
+.aboutme {
+  display: flex;
+  margin-bottom: 50px;
+  align-items: center;
+  transition: all 2;
+  min-height: 73px;
+}
+.aboutme-first-text {
+  font-family: "Roboto", sans-serif;
+  min-width: 200px;
+  font-weight: bold;
+  font-size: xx-large;
+  margin-right: 25px;
+}
+.aboutme-second-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(0, 0, 0, 0.6);
+}
+
+.portfolio {
+  display: flex;
+
+  align-items: center;
+}
+
+.portfolio-first-text {
+  font-family: "Roboto", sans-serif;
+  min-width: 200px;
+  font-weight: bold;
+  font-size: xx-large;
+  margin-right: 25px;
+}
+.portfolio-second-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(0, 0, 0, 0.6);
+}
+
+.header-second-text {
+  font-weight: bold;
+  font-size: x-large;
+  margin: 0;
+}
+@media (max-width: 500px) {
+  .header-down {
+    overflow: scroll;
+  }
+  .works {
+    flex-wrap: wrap;
+  }
+  .small-work8500,
+  .small-work9000 {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    width: 100%;
+  }
+  .header-down {
+    padding: 25px 25px;
+  }
+  .portfolio-first-text {
+    min-width: 125px;
+    font-size: large;
+    margin-right: 0px;
+  }
+  .portfolio-second-text {
+    font-size: 15px;
+  }
+  .aboutme-first-text {
+    font-size: large;
+    margin-right: 0px;
+    min-width: 125px;
+  }
+  .aboutme-second-text {
+    font-size: 15px;
+  }
+  .aboutme {
+    margin-bottom: 10px;
+  }
+
+  .small-work9500 {
+    display: none;
+  }
+  .header-first-text {
+    font-family: "Architects Daughter";
+    font-size: 16px;
+  }
+  .header-second-text {
+    font-family: "Architects Daughter";
+    font-size: 18px;
+  }
+  .header-third-text {
+    font-family: "Sacramento";
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .header {
+    width: 100%;
+  }
+
+  .header-down {
+    padding: 25px 25px;
+  }
+  .portfolio-first-text {
+    min-width: 200px;
+    font-size: x-large;
+    margin-right: 0px;
+  }
+  .portfolio-second-text {
+    font-size: 17px;
+  }
+  .aboutme-first-text {
+    font-size: x-large;
+    margin-right: 0px;
+  }
+  .aboutme-second-text {
+    font-size: 17px;
+  }
+  .aboutme {
+    margin-bottom: 25px;
+  }
+
+  .small-work9500 {
+    display: none;
+  }
+  .header-first-text {
+    font-family: "Architects Daughter";
+  }
+  .header-second-text {
+    font-family: "Architects Daughter";
+    font-size: 20px;
+  }
+  .header-third-text {
+    font-family: "Sacramento";
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 996px) {
+  .header {
+    width: 100%;
+  }
+  .header-first-text {
+    font-family: "Architects Daughter";
+  }
+  .header-second-text {
+    font-family: "Architects Daughter";
+    font-size: 20px;
+  }
+  .header-third-text {
+    font-family: "Sacramento";
+    font-size: 20px;
+  }
+  .header-down {
+    padding: 25px 50px;
+  }
+  .portfolio-first-text {
+    min-width: 200px;
+    font-size: x-large;
+    margin-right: 0px;
+  }
+  .portfolio-second-text {
+    font-size: 17px;
+  }
+  .aboutme-first-text {
+    font-size: x-large;
+    margin-right: 0px;
+  }
+  .aboutme-second-text {
+    font-size: 17px;
+  }
+  .aboutme {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 996px) and (max-width: 1490px) {
+  .header-down {
+    padding: 25px 50px;
+  }
+  .portfolio-first-text {
+    min-width: 200px;
+    font-size: x-large;
+    margin-right: 0px;
+  }
+  .portfolio-second-text {
+    font-size: 17px;
+  }
+  .aboutme-first-text {
+    font-size: x-large;
+    margin-right: 0px;
+  }
+  .aboutme-second-text {
+    font-size: 17px;
+  }
+  .aboutme {
+    margin-bottom: 25px;
+  }
+}

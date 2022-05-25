@@ -1,0 +1,146 @@
+.all-works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 50px;
+  overflow: scroll;
+  position: relative;
+}
+.all-works-item {
+  margin-bottom: 30px;
+}
+.up-button {
+  color: #ad8e02;
+  position: fixed;
+  right: 50px;
+  bottom: 85px;
+  display: none;
+  transition: all 0.3s ease;
+  z-index: 999;
+  cursor: pointer;
+}
+.index-one {
+  position: absolute;
+  color: white;
+  left: 30px;
+  bottom: 13px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+.index-two {
+  position: absolute;
+  color: white;
+  left: 30px;
+  bottom: 0px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+@media (max-width: 576px) {
+  .all-works {
+    padding: 50px 15px;
+  }
+  .up-button {
+    right: 22px;
+  }
+  .small-work-item {
+    max-width: 400px;
+  }
+  .index-one {
+    font-size: 15px;
+  }
+  .index-two {
+    font-size: 12px;
+  }
+}
+@media (min-width: 576px) and (max-width: 625px) {
+  .all-works {
+    padding: 50px 25px;
+  }
+  .up-button {
+    right: 20px;
+  }
+  .small-work-item {
+    max-width: 220px;
+  }
+  .index-one {
+    font-size: 15px;
+  }
+  .index-two {
+    font-size: 13px;
+  }
+}
+@media (min-width: 625px) and (max-width: 768px) {
+  .all-works {
+    padding: 50px 25px;
+  }
+  .up-button {
+    right: 23px;
+  }
+  .small-work-item {
+    max-width: 250px;
+  }
+  .index-one {
+    font-size: 17px;
+  }
+}
+@media (min-width: 768px) and (max-width: 996px) {
+  .all-works {
+    padding: 50px 25px;
+  }
+  .up-button {
+    right: 23px;
+  }
+  .small-work-item {
+    max-width: 310px;
+  }
+}
+@media (min-width: 996px) and (max-width: 1200px) {
+  .all-works {
+    padding: 50px 25px;
+  }
+  .up-button {
+    right: 30px;
+    bottom: 60px;
+  }
+  .small-work-item {
+    max-width: 230px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .all-works {
+    padding: 50px 25px;
+  }
+  .up-button {
+    right: 30px;
+    bottom: 60px;
+  }
+  .small-work-item {
+    max-width: 270px;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .all-works {
+    padding: 50px 50px;
+  }
+  .up-button {
+    right: 30px;
+    bottom: 60px;
+  }
+  .small-work-item {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .small-work-item {
+    max-width: 350px;
+  }
+  .up-button {
+    right: 30px;
+    bottom: 60px;
+  }
+}

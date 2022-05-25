@@ -1,0 +1,81 @@
+.contactme {
+  padding: 50px 125px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+.contactme-left {
+  width: 30%;
+  height: 100%;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.contactme-right {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.name-email-div {
+  width: 100%;
+}
+.create-text {
+  font-size: 30px;
+  bottom: 125px;
+  left: 15%;
+  position: absolute;
+  color: purple;
+}
+@media (max-width: 576px) {
+  .contactme {
+    padding: 25px 25px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  .create-text {
+    font-size: 23px;
+    bottom: 20px;
+    left: 20%;
+  }
+  .contactme-left {
+    margin-bottom: 10px;
+    height: auto;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .contactme {
+    padding: 50px 25px;
+  }
+  .create-text {
+    font-size: 23px;
+    bottom: 100px;
+    left: 7%;
+  }
+  .index-two {
+    font-size: 13px;
+  }
+}
+@media (min-width: 768px) and (max-width: 996px) {
+  .contactme {
+    padding: 50px 50px;
+  }
+  .create-text {
+    font-size: 25px;
+    bottom: 100px;
+    left: 9%;
+  }
+}
+@media (min-width: 996px) and (max-width: 1200px) {
+  .contactme {
+    padding: 50px 50px;
+  }
+  .create-text {
+    font-size: 25px;
+  }
+}
