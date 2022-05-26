@@ -1,5 +1,5 @@
 import { createPortal } from "react-dom";
-import Cv from "../images/cv.png";
+import Cv from "../images/hakan_karayilmaz_cv.png";
 import "./Portal.css";
 import CloseIcon from "@mui/icons-material/Close";
 

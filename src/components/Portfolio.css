@@ -103,7 +103,7 @@
     padding: 50px 25px;
   }
   .up-button {
-    right: 30px;
+    right: 50px;
     bottom: 60px;
   }
   .small-work-item {
@@ -115,7 +115,7 @@
     padding: 50px 25px;
   }
   .up-button {
-    right: 30px;
+    right: 50px;
     bottom: 60px;
   }
   .small-work-item {
@@ -127,7 +127,7 @@
     padding: 50px 50px;
   }
   .up-button {
-    right: 30px;
+    right: 50px;
     bottom: 60px;
   }
   .small-work-item {
@@ -140,7 +140,7 @@
     max-width: 350px;
   }
   .up-button {
-    right: 30px;
+    right: 50px;
     bottom: 60px;
   }
 }
