@@ -42,6 +42,7 @@
     font-size: 20px;
     position: static;
     color: purple;
+    align-self: flex-start;
   }
   .contactme-left {
     margin-bottom: 10px;

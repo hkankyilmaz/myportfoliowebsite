@@ -13,8 +13,8 @@
 .up-button {
   color: #ad8e02;
   position: fixed;
-  right: 50px;
-  bottom: 85px;
+  right: 3.6vw;
+  bottom: 10vh;
   display: none;
   transition: all 0.3s ease;
   z-index: 999;
@@ -43,9 +43,7 @@
   .all-works {
     padding: 50px 15px;
   }
-  .up-button {
-    right: 22px;
-  }
+
   .small-work-item {
     max-width: 400px;
   }
@@ -55,13 +53,16 @@
   .index-two {
     font-size: 12px;
   }
+  .up-button {
+    right: 4.5vw;
+  }
 }
 @media (min-width: 576px) and (max-width: 625px) {
   .all-works {
     padding: 50px 25px;
   }
   .up-button {
-    right: 20px;
+    right: 24px;
   }
   .small-work-item {
     max-width: 220px;
@@ -77,9 +78,7 @@
   .all-works {
     padding: 50px 25px;
   }
-  .up-button {
-    right: 23px;
-  }
+
   .small-work-item {
     max-width: 250px;
   }
@@ -91,9 +90,7 @@
   .all-works {
     padding: 50px 25px;
   }
-  .up-button {
-    right: 23px;
-  }
+
   .small-work-item {
     max-width: 310px;
   }
@@ -102,10 +99,7 @@
   .all-works {
     padding: 50px 25px;
   }
-  .up-button {
-    right: 50px;
-    bottom: 60px;
-  }
+
   .small-work-item {
     max-width: 230px;
   }
@@ -114,10 +108,7 @@
   .all-works {
     padding: 50px 25px;
   }
-  .up-button {
-    right: 50px;
-    bottom: 60px;
-  }
+
   .small-work-item {
     max-width: 270px;
   }
@@ -126,10 +117,7 @@
   .all-works {
     padding: 50px 50px;
   }
-  .up-button {
-    right: 50px;
-    bottom: 60px;
-  }
+
   .small-work-item {
     max-width: 300px;
   }
@@ -138,9 +126,5 @@
 @media (min-width: 1400px) {
   .small-work-item {
     max-width: 350px;
-  }
-  .up-button {
-    right: 50px;
-    bottom: 60px;
   }
 }

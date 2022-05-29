@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const Main = (props) => {
   useEffect(() => {
     window.addEventListener("resize", () => {
-      if (window.innerWidth < 768) {
+      if (window.innerWidth < 996) {
         document.querySelector(".small-work9500").style.display = "none";
         console.log(window.innerWidth);
       } else {

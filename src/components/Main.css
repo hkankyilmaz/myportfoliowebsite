@@ -115,14 +115,13 @@
   }
   .works {
     flex-wrap: wrap;
+    margin-left: 20px;
   }
   .small-work8500,
   .small-work9000 {
     margin-right: 0px;
   }
-  .buttons {
-    justify-content: start;
-  }
+
   .index-one,
   .index-two {
     display: none;
@@ -232,6 +231,9 @@
   .header-third-text {
     font-family: "Sacramento";
     font-size: 20px;
+  }
+  .small-work9500 {
+    display: none;
   }
   .header-down {
     padding: 25px 50px;

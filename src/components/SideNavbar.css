@@ -102,7 +102,7 @@
 .nav_-btn {
   color: white;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   background-color: black;
   width: 55px;
   height: 55px;

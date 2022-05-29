@@ -8,7 +8,6 @@ import imgMovieApp from "../images/eshop.gif";
 import imgEshop from "../images/movieapp.gif";
 import imgPortfolio from "../images/port.png";
 import imgTicToc from "../images/tictoc.png";
-import Button from "@mui/material/Button";
 import PreWievWorkSmall from "./PreWievWorkSmall";
 import $ from "jquery";
 
