@@ -20,7 +20,10 @@ function App() {
   console.log(document.URL);
 
   useEffect(() => {
-    if (document.URL == "http://localhost:3000/") {
+    if (
+      document.URL ==
+      "https://myportfoliowebsite-git-first-branc-4a68e8-hkankyilmazz-gmailcom.vercel.app/"
+    ) {
       let idxOne = 1;
       let idxTwo = 1;
       let idxThree = 1;
