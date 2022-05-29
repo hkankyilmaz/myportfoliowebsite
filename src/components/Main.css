@@ -103,6 +103,12 @@
   font-size: x-large;
   margin: 0;
 }
+.buttons {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  animation: display-modal-in 0.2s ease-in-out;
+}
 @media (max-width: 500px) {
   .header-down {
     overflow: scroll;
@@ -115,7 +121,7 @@
     margin-right: 0px;
   }
   .buttons {
-    justify-content: flex-start;
+    justify-content: start;
   }
   .index-one,
   .index-two {

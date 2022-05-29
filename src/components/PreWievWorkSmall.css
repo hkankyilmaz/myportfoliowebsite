@@ -9,12 +9,7 @@
 
   animation: display-modal-in 0.2s ease-in-out;
 }
-.buttons {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  animation: display-modal-in 0.2s ease-in-out;
-}
+
 .small-work-item {
   transition: all 0.3 ease-in-out;
 }
