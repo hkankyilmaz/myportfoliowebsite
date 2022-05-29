@@ -22,7 +22,7 @@ function App() {
   useEffect(() => {
     if (
       document.URL ==
-      "https://myportfoliowebsite-git-first-branc-4a68e8-hkankyilmazz-gmailcom.vercel.app/"
+      "https://myportfoliowebsite-n235fqy43-hkankyilmazz-gmailcom.vercel.app/"
     ) {
       let idxOne = 1;
       let idxTwo = 1;
