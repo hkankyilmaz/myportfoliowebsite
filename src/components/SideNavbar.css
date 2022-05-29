@@ -106,8 +106,8 @@
   background-color: black;
   width: 55px;
   height: 55px;
-  right: 10px;
-  bottom: 20px;
+  right: 2vw;
+  bottom: 2vh;
   z-index: 12;
   border-radius: 50%;
   animation: display-modal-in 0.3s ease-in-out;

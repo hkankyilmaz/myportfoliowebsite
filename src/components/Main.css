@@ -113,10 +113,21 @@
   .small-work9000 {
     margin-right: 0px;
   }
+  .buttons {
+    justify-content: flex-start;
+  }
+  .index-one,
+  .index-two {
+    display: none;
+  }
 }
 @media (max-width: 576px) {
   .header {
     width: 100%;
+  }
+  .index-one,
+  .index-two {
+    display: none;
   }
   .header-down {
     padding: 25px 25px;

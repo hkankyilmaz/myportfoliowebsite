@@ -40,7 +40,9 @@ const Contact = () => {
           <p style={{ marginBottom: "0px", fontWeight: "600" }}>
             <FontAwesomeIcon fade size="lg" icon={faPhone} /> Phone :
           </p>
-          <p>0551 553 98 72</p>
+          <p style={{ minWidth: "120px", textAlign: "center" }}>
+            0551 553 98 72
+          </p>
         </div>
         <form onSubmit={handleSubmit(onSubmit)} className="contactme-right">
           <div className="name-email-div">

@@ -39,9 +39,9 @@
     align-items: center;
   }
   .create-text {
-    font-size: 23px;
-    bottom: 20px;
-    left: 20%;
+    font-size: 20px;
+    position: static;
+    color: purple;
   }
   .contactme-left {
     margin-bottom: 10px;
