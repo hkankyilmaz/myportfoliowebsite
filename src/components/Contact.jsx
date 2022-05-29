@@ -1,16 +1,8 @@
 import "./Contact.css";
-import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCircleArrowUp,
-  faAt,
-  faBuilding,
-  faPhone,
-} from "@fortawesome/free-solid-svg-icons";
-import $ from "jquery";
+import { faAt, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { TextField } from "@mui/material";
 import Button from "@mui/material/Button";
-
 import { useForm } from "react-hook-form";
 
 const Contact = () => {
@@ -47,7 +39,11 @@ const Contact = () => {
         <form onSubmit={handleSubmit(onSubmit)} className="contactme-right">
           <div className="name-email-div">
             <TextField
-              sx={{ marginRight: "20px", marginBottom: "20px" }}
+              sx={{
+                marginRight: "20px",
+                marginBottom: "20px",
+                minWidth: "150px",
+              }}
               variant="outlined"
               id="outlined-helperText"
               label="Name"
