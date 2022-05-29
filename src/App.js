@@ -15,15 +15,12 @@ function App() {
   const handleOpenPortalTwo = () => {
     setIsOpenPortalTwo(true);
   };
-  console.log(document.URL);
+  console.log(window.location.pathname);
 
   console.log(document.URL);
 
   useEffect(() => {
-    if (
-      document.URL ==
-      "https://myportfoliowebsite-n235fqy43-hkankyilmazz-gmailcom.vercel.app/"
-    ) {
+    if (window.location.pathname == "/") {
       let idxOne = 1;
       let idxTwo = 1;
       let idxThree = 1;
