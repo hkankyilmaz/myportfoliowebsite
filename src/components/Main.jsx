@@ -43,9 +43,25 @@ const Main = (props) => {
           </div>
         </div>
         <div className="works">
-          <PreWievWorkSmall img={imgMovieApp} time="8500" />
-          <PreWievWorkSmall img={imgLawFirm} time="9000" />
-          <PreWievWorkSmall className="last" img={imgEshop} time="9500" />
+          <PreWievWorkSmall
+            textHead="E-shop App"
+            text="E-shop app for e-commerce.Some Used Technologies;React Props, ReactHooks, ReactContext, Metarial UI, Firebase"
+            img={imgMovieApp}
+            time="8500"
+          />
+          <PreWievWorkSmall
+            textHead="Law Firm Website"
+            text="Website for a law firm.Some used Technogies; React Props, ReactHooks, ReactRouter, FontAwesome UI, Metarial UI"
+            img={imgLawFirm}
+            time="9000"
+          />
+          <PreWievWorkSmall
+            textHead="Movie App"
+            text="Add your list which your favourite movie and don't forget name of the movie.Some used Technogies;REST API, ReactHooks..."
+            className="last"
+            img={imgEshop}
+            time="9500"
+          />
         </div>
         <div style={{ display: "flex" }} className="buttons">
           <Link style={{ textDecoration: "none" }} to="allworks">

@@ -11,7 +11,16 @@ import $ from "jquery";
 import { TextField } from "@mui/material";
 import Button from "@mui/material/Button";
 
+import { useForm } from "react-hook-form";
+
 const Contact = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isDirty },
+  } = useForm();
+  const onSubmit = (data) => console.log(data);
+  console.log(errors, isDirty);
   return (
     <div className="header">
       <div className="header-up">
@@ -33,7 +42,7 @@ const Contact = () => {
           </p>
           <p>0551 553 98 72</p>
         </div>
-        <div className="contactme-right">
+        <form onSubmit={handleSubmit(onSubmit)} className="contactme-right">
           <div className="name-email-div">
             <TextField
               sx={{ marginRight: "20px", marginBottom: "20px" }}
@@ -41,13 +50,29 @@ const Contact = () => {
               id="outlined-helperText"
               label="Name"
               size="small"
+              {...register("Name", {
+                required: "Required Field",
+              })}
+              error={!!errors.Name}
+              helperText={errors?.Name ? errors.Name.message : null}
             />
             <TextField
               sx={{ marginBottom: "20px" }}
               variant="outlined"
               id="outlined-helperText"
-              label="E-mail"
+              label="Email"
               size="small"
+              autoComplete="Email"
+              {...register("Email", {
+                required: "Required Field",
+                pattern: {
+                  value:
+                    /^[\w-]+(\.[\w-]+)*@([a-z0-9-]+(\.[a-z0-9-]+)*?\.[a-z]{2,6}|(\d{1,3}\.){3}\d{1,3})(:\d{4})?$/,
+                  message: "Invalid email adress",
+                },
+              })}
+              error={!!errors.Email}
+              helperText={errors?.Email ? errors.Email.message : null}
             />
           </div>
 
@@ -57,6 +82,11 @@ const Contact = () => {
             id="outlined-helperText"
             label="Subject"
             size="small"
+            {...register("Subject", {
+              required: "Required Field",
+            })}
+            error={!!errors.Subject}
+            helperText={errors?.Subject ? errors.Subject.message : null}
           />
           <TextField
             sx={{ marginBottom: "20px" }}
@@ -66,11 +96,21 @@ const Contact = () => {
             label="Message"
             rows={5}
             size="small"
+            {...register("Messages", {
+              required: "Required Field",
+            })}
+            error={!!errors.Message}
+            helperText={errors?.Message ? errors.Message.message : null}
           />
-          <Button sx={{ maxWidth: "200px" }} size="small" variant="contained">
+          <Button
+            type="submit"
+            sx={{ maxWidth: "200px" }}
+            size="small"
+            variant="contained"
+          >
             Send Message
           </Button>
-        </div>
+        </form>
         <p className="create-text">Contact Me for new Project...🚀</p>
       </div>
     </div>

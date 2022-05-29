@@ -15,89 +15,92 @@ function App() {
   const handleOpenPortalTwo = () => {
     setIsOpenPortalTwo(true);
   };
+  console.log(document.URL);
 
-  let idxOne = 1;
-  let idxTwo = 1;
-  let idxThree = 1;
-  let idxFour = 1;
+  console.log(document.URL);
 
   useEffect(() => {
-    const textOneDiv = document.querySelector(".aboutme-first-text");
-    const textTwoDiv = document.querySelector(".aboutme-second-text");
-    const textThreeDiv = document.querySelector(".portfolio-first-text");
-    const textFourDiv = document.querySelector(".portfolio-second-text");
+    if (document.URL == "http://localhost:3000/") {
+      let idxOne = 1;
+      let idxTwo = 1;
+      let idxThree = 1;
+      let idxFour = 1;
+      const textOneDiv = document.querySelector(".aboutme-first-text");
+      const textTwoDiv = document.querySelector(".aboutme-second-text");
+      const textThreeDiv = document.querySelector(".portfolio-first-text");
+      const textFourDiv = document.querySelector(".portfolio-second-text");
 
-    textOneDiv.innerHTML = "";
-    textTwoDiv.innerHTML = "";
-    textThreeDiv.innerHTML = "";
-    textFourDiv.innerHTML = "";
+      textOneDiv.innerHTML = "";
+      textTwoDiv.innerHTML = "";
+      textThreeDiv.innerHTML = "";
+      textFourDiv.innerHTML = "";
 
-    const textOne = "About Me";
-    const textTwo = `I have been developing myself as a frontend developer about
-                     a year.I have been working on React.js. I love teamwork, spending
-                     time on computer ,mostly learning and applying new stuff.`;
-    const textThree = "My Portfolio";
-    const textFour = `Let's Check Out My Work...`;
+      const textOne = "About Me";
+      const textTwo = `I have been developing myself as a frontend developer about a year.I have been working on React.js. I love teamwork, spending  time on computer ,mostly learning and applying new stuff.`;
 
-    const writeTextOne = () => {
-      textOneDiv.innerHTML = textOne.slice(0, idxOne);
-      idxOne++;
-      if (idxOne <= textOne.length) {
-        setTimeout(writeTextOne, 50);
-      }
-    };
-    writeTextOne();
-    const writeTextTwo = () => {
-      textTwoDiv.innerHTML = textTwo.slice(0, idxTwo);
-      idxTwo++;
-      if (idxTwo <= textTwo.length) {
-        setTimeout(writeTextTwo, 50);
-      }
-    };
-    setTimeout(writeTextTwo, 500);
+      const textThree = "My Portfolio";
+      const textFour = `Let's Check Out My Work...`;
 
-    const writeTextThree = () => {
-      textThreeDiv.innerHTML = textThree.slice(0, idxThree);
-      idxThree++;
-      if (idxThree <= textThree.length) {
-        setTimeout(writeTextThree, 50);
-      }
-    };
-    setTimeout(writeTextThree, 6400);
-    const writeTextFour = () => {
-      textFourDiv.innerHTML = textFour.slice(0, idxFour);
-      idxFour++;
-      if (idxFour <= textFour.length) {
-        setTimeout(writeTextFour, 50);
-      }
-    };
-    setTimeout(writeTextFour, 7200);
+      const writeTextOne = () => {
+        textOneDiv.innerHTML = textOne.slice(0, idxOne);
+        idxOne++;
+        if (idxOne <= textOne.length) {
+          setTimeout(writeTextOne, 20);
+        }
+      };
+      writeTextOne();
+      const writeTextTwo = () => {
+        textTwoDiv.innerHTML = textTwo.slice(0, idxTwo);
+        idxTwo++;
+        if (idxTwo <= textTwo.length) {
+          setTimeout(writeTextTwo, 20);
+        }
+      };
+      setTimeout(writeTextTwo, 500);
 
-    document.querySelector(".buttons").style.display = "none";
+      const writeTextThree = () => {
+        textThreeDiv.innerHTML = textThree.slice(0, idxThree);
+        idxThree++;
+        if (idxThree <= textThree.length) {
+          setTimeout(writeTextThree, 20);
+        }
+      };
+      setTimeout(writeTextThree, 5200);
+      const writeTextFour = () => {
+        textFourDiv.innerHTML = textFour.slice(0, idxFour);
+        idxFour++;
+        if (idxFour <= textFour.length) {
+          setTimeout(writeTextFour, 20);
+        }
+      };
+      setTimeout(writeTextFour, 6000);
 
-    const showButtons = () => {
-      document.querySelector(".buttons").style.display = "flex";
-    };
+      document.querySelector(".buttons").style.display = "none";
 
-    setTimeout(showButtons, 9500);
+      const showButtons = () => {
+        document.querySelector(".buttons").style.display = "flex";
+      };
 
-    document.querySelector(".small-work8500").style.display = "none";
-    document.querySelector(".small-work9000").style.display = "none";
-    document.querySelector(".small-work9500").style.display = "none";
+      setTimeout(showButtons, 8000);
 
-    const firstsmallWorkShow = () => {
-      document.querySelector(".small-work8500").style.display = "flex";
-    };
-    const secondsmallWorkShow = () => {
-      document.querySelector(".small-work9000").style.display = "flex";
-    };
-    const thirdsmallWorkShow = () => {
-      document.querySelector(".small-work9500").style.display = "flex";
-    };
+      document.querySelector(".small-work8500").style.display = "none";
+      document.querySelector(".small-work9000").style.display = "none";
+      document.querySelector(".small-work9500").style.display = "none";
 
-    setTimeout(firstsmallWorkShow, 8500);
-    setTimeout(secondsmallWorkShow, 8500);
-    setTimeout(thirdsmallWorkShow, 8500);
+      const firstsmallWorkShow = () => {
+        document.querySelector(".small-work8500").style.display = "flex";
+      };
+      const secondsmallWorkShow = () => {
+        document.querySelector(".small-work9000").style.display = "flex";
+      };
+      const thirdsmallWorkShow = () => {
+        document.querySelector(".small-work9500").style.display = "flex";
+      };
+
+      setTimeout(firstsmallWorkShow, 7000);
+      setTimeout(secondsmallWorkShow, 7000);
+      setTimeout(thirdsmallWorkShow, 7000);
+    }
   }, []);
 
   useEffect(() => {
