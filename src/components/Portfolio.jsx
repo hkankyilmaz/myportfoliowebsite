@@ -69,7 +69,7 @@ const Portfolio = () => {
         />
 
         <PreWievWorkSmall
-          url="https://github.com/hkankyilmaz/movieapp.git"
+          url="https://github.com/hkankyilmaz/myportfoliowebsite.git"
           pages="https://hkankyilmaz.vercel.app/"
           textHead="Portfolio Website"
           text="Personel Website.Some used Technologies;React Props, ReactHooks, ReactPortal, Metarial UI, FontAwesome UI"
