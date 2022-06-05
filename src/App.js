@@ -20,90 +20,6 @@ function App() {
   console.log(document.URL);
 
   useEffect(() => {
-    if (window.location.pathname == "/") {
-      let idxOne = 1;
-      let idxTwo = 1;
-      let idxThree = 1;
-      let idxFour = 1;
-      const textOneDiv = document.querySelector(".aboutme-first-text");
-      const textTwoDiv = document.querySelector(".aboutme-second-text");
-      const textThreeDiv = document.querySelector(".portfolio-first-text");
-      const textFourDiv = document.querySelector(".portfolio-second-text");
-
-      textOneDiv.innerHTML = "";
-      textTwoDiv.innerHTML = "";
-      textThreeDiv.innerHTML = "";
-      textFourDiv.innerHTML = "";
-
-      const textOne = "About Me";
-      const textTwo = `I have been developing myself as a frontend developer about a year.I have been working on React.js. I love teamwork, spending  time on computer ,mostly learning and applying new stuff.`;
-
-      const textThree = "My Portfolio";
-      const textFour = `Let's Check Out My Work...`;
-
-      const writeTextOne = () => {
-        textOneDiv.innerHTML = textOne.slice(0, idxOne);
-        idxOne++;
-        if (idxOne <= textOne.length) {
-          setTimeout(writeTextOne, 20);
-        }
-      };
-      writeTextOne();
-      const writeTextTwo = () => {
-        textTwoDiv.innerHTML = textTwo.slice(0, idxTwo);
-        idxTwo++;
-        if (idxTwo <= textTwo.length) {
-          setTimeout(writeTextTwo, 20);
-        }
-      };
-      setTimeout(writeTextTwo, 500);
-
-      const writeTextThree = () => {
-        textThreeDiv.innerHTML = textThree.slice(0, idxThree);
-        idxThree++;
-        if (idxThree <= textThree.length) {
-          setTimeout(writeTextThree, 20);
-        }
-      };
-      setTimeout(writeTextThree, 5200);
-      const writeTextFour = () => {
-        textFourDiv.innerHTML = textFour.slice(0, idxFour);
-        idxFour++;
-        if (idxFour <= textFour.length) {
-          setTimeout(writeTextFour, 20);
-        }
-      };
-      setTimeout(writeTextFour, 6000);
-
-      document.querySelector(".buttons").style.display = "none";
-
-      const showButtons = () => {
-        document.querySelector(".buttons").style.display = "flex";
-      };
-
-      setTimeout(showButtons, 8000);
-
-      document.querySelector(".small-work8500").style.display = "none";
-      document.querySelector(".small-work9000").style.display = "none";
-      document.querySelector(".small-work9500").style.display = "none";
-
-      const firstsmallWorkShow = () => {
-        document.querySelector(".small-work8500").style.display = "flex";
-      };
-      const secondsmallWorkShow = () => {
-        document.querySelector(".small-work9000").style.display = "flex";
-      };
-      const thirdsmallWorkShow = () => {
-        document.querySelector(".small-work9500").style.display = "flex";
-      };
-
-      setTimeout(firstsmallWorkShow, 7000);
-      setTimeout(secondsmallWorkShow, 7000);
-      setTimeout(thirdsmallWorkShow, 7000);
-    }
-  }, []);
-
-  useEffect(() => {
     const open_btn = document.querySelector(".open-btn");
     const close_btn = document.querySelector(".close-btn");
     const nav = document.querySelectorAll(".nav_");
@@ -163,25 +79,25 @@ function App() {
               <li>
                 <Link to="/" className="current">
                   Home
-                  <hr style={{ color: "#ad8e02" }}></hr>
+                  <hr></hr>
                 </Link>
               </li>
               <li>
                 <Link to="allworks">
                   Portfolio
-                  <hr style={{ color: "#ad8e02" }}></hr>
+                  <hr></hr>
                 </Link>
               </li>
               <li>
                 <a onClick={handleOpenPortalTwo} href="#">
                   CV
-                  <hr style={{ color: "#ad8e02" }}></hr>
+                  <hr></hr>
                 </a>
               </li>
               <li>
                 <Link style={{ marginBottom: "20px" }} to="contact">
                   Contact
-                  <hr style={{ color: "#ad8e02" }}></hr>
+                  <hr></hr>
                 </Link>
               </li>
 

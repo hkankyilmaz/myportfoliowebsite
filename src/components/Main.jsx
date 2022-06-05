@@ -44,18 +44,21 @@ const Main = (props) => {
         </div>
         <div className="works">
           <PreWievWorkSmall
+            url="https://github.com/hkankyilmaz/eshopapp.git"
             textHead="E-shop App"
             text="E-shop app for e-commerce.Some Used Technologies;React Props, ReactHooks, ReactContext, Metarial UI, Firebase"
             img={imgMovieApp}
             time="8500"
           />
           <PreWievWorkSmall
+            url="https://github.com/hkankyilmaz/lawfirmwebsite.git"
             textHead="Law Firm Website"
             text="Website for a law firm.Some used Technogies; React Props, ReactHooks, ReactRouter, FontAwesome UI, Metarial UI"
             img={imgLawFirm}
             time="9000"
           />
           <PreWievWorkSmall
+            url="https://github.com/hkankyilmaz/movieapp.git"
             textHead="Movie App"
             text="Add your list which your favourite movie and don't forget name of the movie.Some used Technogies;REST API, ReactHooks..."
             className="last"

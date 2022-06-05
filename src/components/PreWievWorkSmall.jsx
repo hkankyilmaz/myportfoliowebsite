@@ -28,8 +28,12 @@ const PreWievWorkSmall = (props) => {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">Go Repo</Button>
-          <Button size="small">Go Pages</Button>
+          <Button target="_blank" href={props.url} size="small">
+            Go Repo
+          </Button>
+          <Button target="_blank" href={props.pages} size="small">
+            Go Pages
+          </Button>
         </CardActions>
       </Card>
     </div>

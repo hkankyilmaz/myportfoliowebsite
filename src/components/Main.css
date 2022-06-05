@@ -22,8 +22,8 @@
   align-items: center;
   height: 20%;
   width: 100%;
-  background-image: url(../images/art.jpg);
-  background-position: 30% 80%;
+  background-image: url(../images/white.jpg);
+  background-size: cover;
   box-sizing: border-box;
 }
 
@@ -32,7 +32,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  opacity: 0.4;
+  opacity: 0.01;
 }
 .header-first-text {
   font-family: "Architects Daughter";
@@ -48,7 +48,7 @@
 .header-first-text,
 .header-second-text,
 .header-third-text {
-  color: white;
+  color: rgb(0, 0, 0, 0.9);
   z-index: 5;
 }
 

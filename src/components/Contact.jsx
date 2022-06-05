@@ -1,11 +1,33 @@
 import "./Contact.css";
+import * as React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAt, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { TextField } from "@mui/material";
 import Button from "@mui/material/Button";
 import { useForm } from "react-hook-form";
+import { blueGrey } from "@mui/material/colors";
+import { Stack, Snackbar } from "@mui/material";
+import MuiAlert from "@mui/material/Alert";
 
 const Contact = () => {
+  const Alert = React.forwardRef(function Alert(props, ref) {
+    return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+  });
+
+  const [open, setOpen] = React.useState(false);
+
+  const handleClick = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpen(false);
+  };
+
   const {
     register,
     handleSubmit,
@@ -36,7 +58,11 @@ const Contact = () => {
             0551 553 98 72
           </p>
         </div>
-        <form onSubmit={handleSubmit(onSubmit)} className="contactme-right">
+        <form
+          action="https://formsubmit.co/hkankyilmazz@gmail.com"
+          onSubmit={handleSubmit(onSubmit)}
+          className="contactme-right"
+        >
           <div className="name-email-div">
             <TextField
               sx={{
@@ -47,6 +73,7 @@ const Contact = () => {
               variant="outlined"
               id="outlined-helperText"
               label="Name"
+              name="name"
               size="small"
               {...register("Name", {
                 required: "Required Field",
@@ -59,6 +86,7 @@ const Contact = () => {
               variant="outlined"
               id="outlined-helperText"
               label="Email"
+              name="email"
               size="small"
               autoComplete="Email"
               {...register("Email", {
@@ -80,6 +108,7 @@ const Contact = () => {
             id="outlined-helperText"
             label="Subject"
             size="small"
+            name="_subject"
             {...register("Subject", {
               required: "Required Field",
             })}
@@ -92,15 +121,18 @@ const Contact = () => {
             variant="outlined"
             id="outlined-helperText"
             label="Message"
+            name="message"
             rows={5}
             size="small"
-            {...register("Messages", {
+            {...register("Message", {
               required: "Required Field",
             })}
             error={!!errors.Message}
             helperText={errors?.Message ? errors.Message.message : null}
           />
           <Button
+            onClick={handleClick}
+            color="secondary"
             type="submit"
             sx={{ maxWidth: "200px" }}
             size="small"
@@ -111,6 +143,18 @@ const Contact = () => {
         </form>
         <p className="create-text">Contact Me for new Project...🚀</p>
       </div>
+      <Stack spacing={2} sx={{ width: "100%" }}>
+        <Snackbar
+          anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+          open={open}
+          autoHideDuration={4000}
+          onClose={handleClose}
+        >
+          <Alert onClose={handleClose} severity="error" sx={{ width: "100%" }}>
+            This service is not active at the moment.
+          </Alert>
+        </Snackbar>
+      </Stack>
     </div>
   );
 };
